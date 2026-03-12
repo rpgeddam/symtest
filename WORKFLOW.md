@@ -2,14 +2,14 @@
   tracker:
     kind: github
     api_key: $GITHUB_TOKEN
-    owner: your-user
-    repo: your-repo
+    owner: rpgeddam
+    repo: symtest
     active_states:
       - Todo
     active_labels:
       - todo
   workspace:
-    root: ~/symphony_workspaces
+    root: /tmp/symphony_workspaces
   hooks:
     after_create: |
       git clone https://x-access-token:${GITHUB_TOKEN}@github.com/your-user/your-repo.git .
