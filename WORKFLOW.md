@@ -14,7 +14,7 @@ workspace:
   
 hooks:
   after_create: |
-    git clone https://x-access-token:${GITHUB_TOKEN}@github.com/your-user/your-repo.git .
+    git clone https://x-access-token:${GITHUB_TOKEN}@github.com/rpgeddam/symtest.git .
   before_run: |
     git fetch origin
     git checkout -b feature/{{ issue.identifier }}
